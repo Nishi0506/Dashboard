@@ -1,0 +1,105 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.main
+{
+    margin-left: 18%;
+}
+
+.banner4
+{
+    margin-left: 12%;
+}
+.banner4_text2
+{
+    margin-left: 60%;
+}
+.main-table
+{
+    margin: 0;
+    margin-left: 18%;
+    width: 80%; 
+}
+.header-title
+{
+    margin-left: 20%;
+}
+.banner4
+{
+    margin: 0;
+    margin-left: 18%;
+    width: 80%;
+}
+.table_area
+{
+    margin: 0;
+    padding: 0;
+} 
+a 
+{
+text-decoration: none;
+}
+a:hover
+{
+    text-decoration: none;
+}
+a:active
+{
+    text-decoration: none;
+}
+@keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+  }
+  @property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+  }
+  div[role="progressbar"] {
+    --size: 8rem;
+    --fg: #369;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+    margin-left: 40%;
+  }
+  div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+  }
+  .search-logo{
+    position: absolute;
+    left: 33%;
+    font-weight: lighter;
+  }
+  #arrow
+  {
+    position: absolute;
+    left: 60%;
+  }
+#arrow2
+{
+    border: none;
+    background: #f9f6f600;
+    color: white;
+    width: 170px;
+    padding: 20px;
+}
+
+  

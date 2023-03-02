@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+crossorigin="anonymous"/>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    /> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css
+">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+<body>
+    <!-- navbar-->
+    <div>
+       <nav class="navbar navbar-light bg-white"> 
+        <div class="container me-3">
+            <form class="form-inline ms-5 form1">
+          <input class="form-control mr-sm-3 bg-light" type="search" placeholder="What are you looking for?" aria-label="Search"/>
+          <i class="fas fa-magnifying-glass search-logo"></i>
+        </form> 
+        <div>
+            <ul class="list-inline">
+                <li class="d-flex">
+                    <div><i class="fa fa-sliders my-2 " style="font-size:24px"></i></div>
+                    <div><i class="fa fa-bell-o ms-3 my-2" style="font-size:24px"></i> </div>
+                    <div><img class="rounded-circle ms-3 my-1" src="images/w.jpg" width="40" height="40"></div>
+                    <div><span class="ms-3 mb-5" style="line-height:2.5rem;">NanyeaK. </span></div>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    </nav> 
+</div>
+       
+    <!-- Sidenavbar -->
+    <div class="container-fluid fixed-top">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-black">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <div class="spinner">
+                        <i class="fa fa-spinner" aria-hidden="true"></i>
+                        <span>UBLOD</span>
+                        <i class="fa fa-qrcode ms-5 px-1 " aria-hidden="true"></i>
+                        <i class="fa fa-sliders"></i>
+                    </div>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-5 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-0 d-none d-sm-inline text-secondary">Navigation</span>
+                                <div class="dash pb-0 ">
+                                    <a href="#" class="d-flex align-items-center text-white text-decoration-none" aria-expanded="false">
+                                        <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                                        <i class="fa fa-chevron-down ms-5" id="arrow"></i>
+                                    </a>
+                                </div>
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-4 pb-0"> <span class="d-none d-sm-inline text-white">Dashboard 1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-4 pb-0"> <span class="d-none d-sm-inline text-secondary">Dashboard 2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-4 pb-0"> <span class="d-none d-sm-inline text-secondary">Dashboard 3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-4 pb-4"> <span class="d-none d-sm-inline text-secondary">Dashboard 4</a>
+                                </li>
+                            </a>
+                        </li>
+                        <div class="cal pb-3">
+                            <a href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown"class="d-flex align-items-center text-secondary text-decoration-none" id="dropdownUser1" aria-expanded="false">
+                                <i class="fa fa-calendar" aria-hidden="true"></i> <span class="ms-3 d-none d-sm-inline">Calendar</span><i class="fa fa-chevron-down ms-5" id="arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                              </ul>
+                        </div>
+                        <div class="chat pb-3">
+                            <a href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown"class="d-flex align-items-center text-secondary text-decoration-none" id="dropdownUser1" aria-expanded="false">
+                                <i class="fa fa-comments-o" aria-hidden="true"></i> <span class="ms-3 d-none d-sm-inline">Chat</span><i class="fa fa-chevron-down ms-5" id="arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                              </ul>
+                        </div>
+                        <div class="ecom pb-3">
+                            <a href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown"class="d-flex align-items-center text-secondary text-decoration-none" id="dropdownUser1" aria-expanded="false">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="ms-3 d-none d-sm-inline">Ecommerce</span><i class="fa fa-chevron-down ms-5" id="arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                              </ul>
+                        </div>
+                        <div class="user pb-3">
+                            <a href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown"class="d-flex align-items-center text-secondary text-decoration-none" id="dropdownUser1" aria-expanded="false">
+                                <i class="fa fa-users" aria-hidden="true"></i> <span class="ms-3 d-none d-sm-inline">CRM</span><i class="fa fa-chevron-down ms-5" id="arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                              </ul>
+                        </div>
+                        <div class="env pb-3">
+                            <a href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown"class="d-flex align-items-center text-secondary text-decoration-none" id="dropdownUser1" aria-expanded="false">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> <span class="ms-3 d-none d-sm-inline">Email</span><i class="fa fa-chevron-down ms-5" id="arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                              </ul>
+                        </div>
+                        <div class="feed pb-3">
+                            <a href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown"class="d-flex align-items-center text-secondary text-decoration-none" id="dropdownUser1" aria-expanded="false">
+                                <i class="fa fa-rss" aria-hidden="true"></i> <span class="ms-3 d-none d-sm-inline">SocialFeed</span><i class="fa fa-chevron-down ms-5" id="arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                              </ul>
+                        </div>
+                        <div class="proj pb-3">
+                            <a href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown"class="d-flex align-items-center text-secondary text-decoration-none" id="dropdownUser1" aria-expanded="false">
+                                <i class="fa fa-lock" aria-hidden="true"></i> <span class="ms-3 d-none d-sm-inline">Projects</span><i class="fa fa-chevron-down ms-5" id="arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                              </ul>
+                        </div>
+                        <div class="task pb-3">
+                            <a href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown"class="d-flex align-items-center text-secondary text-decoration-none" id="dropdownUser1" aria-expanded="false">
+                                <i class="fa fa-tasks" aria-hidden="true"></i> <span class="ms-3 d-none d-sm-inline">task</span><i class="fa fa-chevron-down ms-5" id="arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                                <li><a class="dropdown-item" href="#">Calender</a></li>
+                              </ul>
+                        </div>
+                   <hr style="margin: 0; padding: 0; color: red;">
+                  <!-- <div class="divider" style="color: white; margin: 0; padding: 0;"></div> -->
+                   <div>
+                   <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                    <i class="fa fa-arrow-right-from-bracket"></i>
+                    <i class="fa fa-power-off rounded-pill text-white"></i>
+                     <span class="text-white ms-1">Log Out</span>
+                  </button>
+                </div>
+                </div>
+            </div>
+        </div>
+     </div> 
+
+     <!--banner1  -->
+    <div class="main d-flex">
+        <div class="new1">
+            <button class="btn btn-outline-secondary">Create new<i class="fa fa-chevron-down ms-1" id="arrow1"></i></button>
+        </div>
+        <div class="menu1">
+            <button class="btn btn-outline-secondary ms-4">Mega Menu<i class="fa fa-chevron-down ms-1" id="arrow1"></i></button>
+        </div>
+        <div class="calend col-md-7 ms-5">
+            <button class="btn btn-outline-secondary float-right fs-10">
+                <i class="fa fa-calendar"><span> Jan 21,2022</span></i>
+            </button>
+        </div>
+        <div class="export1">
+            <button class="btn btn-primary btn-md fs-6">Export
+                <i class="fa fa-power-off text-white fs-7"></i>
+            </button>
+        </div>
+    </div>
+<!--banner2-->
+     <div class="container pt-3" style="margin-left:16%;">
+        <div class="row g-4 my-2" >
+            <div class="col-md-3" >
+                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded  w-75" style="height: 3rem; " >
+                    <i class='bx bxs-heart bx-border bx-sm rounded-4 text-white bg-danger'></i>
+                    <div >
+                        <h3 class="fs-6">$ 58,947</h3>
+                        <p class="fs-6 text-muted">Total Revenue</p>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="col-md-3" >
+                <div class="p-2 bg-white shadow-sm d-flex justify-content-around align-items-center rounded  w-75" style="height: 3rem; " >
+                    <i class='bx bxs-shopping-bag bx-border bx-sm rounded-4 text-white bg-warning'></i>
+                    <div>
+                        <h3 class="fs-6">127</h3>
+                        <p class="fs-6 text-muted">Today's Sale</p>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="col-md-3" >
+                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded  w-75" style="height: 3rem; " >
+                    <i class='bx bxs-bar-chart-square bx-border bx-sm rounded-4 text-white bg-success'></i>
+                    <div>
+                        <h3 class="fs-6">0.58%</h3>
+                        <p class="fs-6 text-muted">Conversion</p>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="col-md-3" >
+                <div class="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded w-75" style="height: 3rem; " >
+                    <i class='bx bxs-bullseye bx-border bx-sm rounded-4 text-white bg-primary'></i>
+                    <div>
+                        <h3 class="fs-6">78.4K</h3>
+                        <p class="fs-6 text-muted">Today's Visits</p>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+     </div> 
+     <!--banner3-->
+      <div class="main2 d-flex pt-3" style="margin-left: 18%;">
+      <div class="w-75">
+        <canvas id="myChart"></canvas>
+      </div>
+        <div class="card-body">
+            
+            <h5 class="header-title">Total Revenue</h5>
+             <div role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="--value:68">
+            </div>
+                <p class="text-muted w-50 mx-auto sp-line-2 pt-2">We've found way to make your revenue more effective.</p>
+                    <hr>
+                    <div class="row ml-4 mb-2">
+                            <div class="col-4">
+                                <p class="text-muted font-10 mb-1 text-truncate">Target</p>
+                                    <h5><i class="fas fa-arrow-down text-danger me-1"></i>$7.8k</h5>
+                            </div>
+                             <div class="col-4">
+                                <p class="text-muted font-15 mb-1 text-truncate">Last week</p>
+                                    <h5><i class="fas fa-arrow-up text-success me-1"></i>$1.4k</h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="text-muted font-15 mb-1 text-truncate">Last Month</p>
+                                    <h5><i class="fas fa-arrow-down text-danger me-1"></i>$15k</h5>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+    </div>
+      
+      
+<!--banner4-->
+
+<div class="table_area bg-light">
+<div class="banner4 d-flex pt-4" >
+    <div class="banner4_text1" >
+      <p class="fw-bold fs-5">Top 5 Users Balances</p>
+    </div>
+    
+    <div class="banner4_text2 col-md-3 ms-auto" >
+      <button class="btn btn-outline-secondary rounded-pill"><i class="fa fa-sort"></i>  Filter & Sort</button>
+    </div>
+    
+</div> 
+ <div class="main-table pt-3" >
+    <div class="row" >
+      <div class="col-11" >
+        <table class="table">
+          <thead >
+            <tr class=" text-secondary bg-light">
+              <th scope="col" id="profile">Profile</th>
+              <th scope="col" id="Currency">Currency</th>
+              <th scope="col" id="data">Date</th>
+              <th scope="col" id="size">Balance</th>
+              <th scope="col" id="size">Reversed in orders</th>
+              <th scope="col" id="size">Status</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr id="row1">
+              <td id="profile_row1">
+                <div class="d-flex align-items-center"><img class="rounded" src="images/user2.png" width="40" height="40">
+                    <div class="d-block"><span class="ml-2 pt-1">  Tomaiau</span><p class=" ms-2">Members since 2017</p></div></div>
+              </td>
+              <td id="currency_row1">
+                <div><i class="fa fa-btc text-warning fs-5"></i> BTC</div>
+              </td>
+              <td id="date_row1">Oct12,2022</td>
+              <td id="balance_row1">0.0089475BTC</td>
+              <td id="order_row1">0.0089475BTC</td>
+              <td id="status_row1"><button class=" btn text-success bg-light">Paid</button></td>
+            </tr>
+
+            <tr id="row1">
+                <td id="filename_row1">
+                  <div class="d-flex align-items-center"><img class="rounded" src="images/user3.jpg" width="40" height="40">
+                      <div class="d-block"><span class="ml-2 pt-1">  Tomaiau</span><p class=" ms-2" style="display: block;">Members since 2017</p></div>
+                    </div>
+                </td>
+                <td id="currency_row1">
+                  <div><i class="fa-brands fa-ethereum" aria-hidden="true"></i> ETH</div>
+                </td>
+                <td id="date_row1">Oct12,2022</td>
+                <td id="balance_row1">0.0089475ETH</td>
+                <td id="order_row1">0.0089475ETH</td>
+                <td id="status_row1"><button class=" btn text-danger bg-light">Upcoming</button></td> 
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+      <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Jan01", "Jan03", "Jan05", "Jan07", "Jan09", "Jan11"],
+     datasets: [{
+        barThickness: 18,
+        borderRadius :10,
+      label: 'Revenue',
+      data: [380, 390, 590, 250, 400, 200],
+      backgroundColor: "rgba(211,211,211)",
+    }, {
+      label: 'Sales',
+      barThickness: 18,
+      borderRadius :10,
+      data: [410, 590, 650, 440, 620, 430],
+      backgroundColor: "rgba(0,0,255)"
+    }],    
+  },
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
